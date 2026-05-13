@@ -31,7 +31,7 @@ export const site = {
     longitude: 106.728079,
   },
   phone: "0813-1742-034",
-  phoneE164: "+62813174203400",
+  phoneE164: "+628131742034",
   email: "hello@tamarumasawangan.my.id",
   social: {
     instagram: "https://www.instagram.com/tamaruma.sawangan",
