@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { NavV2 } from "@/components/v2/NavV2";
 import { HeroV2 } from "@/components/v2/HeroV2";
-import { IntroV2 } from "@/components/v2/IntroV2";
-import { SiteplanV2 } from "@/components/v2/SiteplanV2";
-import { UnitShowcaseV2 } from "@/components/v2/UnitShowcaseV2";
-import { HorizontalTicker } from "@/components/v2/HorizontalTicker";
-import { ManifestoV2 } from "@/components/v2/ManifestoV2";
-import { GalleryGridV2 } from "@/components/v2/GalleryGridV2";
-import { MomentsSection } from "@/components/v2/MomentsSection";
-import { CtaBlockV2 } from "@/components/v2/CtaBlockV2";
-import { FooterV2 } from "@/components/v2/FooterV2";
 import { SectionRail } from "@/components/v2/SectionRail";
 import { FloatingChat } from "@/components/FloatingChat";
 import { BackToTop } from "@/components/BackToTop";
 import { site, unitTypes, faqs } from "@/lib/site";
+
+// Below-fold sections — lazy loaded to speed up initial paint
+const IntroV2 = dynamic(() => import("@/components/v2/IntroV2").then(m => ({ default: m.IntroV2 })));
+const SiteplanV2 = dynamic(() => import("@/components/v2/SiteplanV2").then(m => ({ default: m.SiteplanV2 })));
+const UnitShowcaseV2 = dynamic(() => import("@/components/v2/UnitShowcaseV2").then(m => ({ default: m.UnitShowcaseV2 })));
+const HorizontalTicker = dynamic(() => import("@/components/v2/HorizontalTicker").then(m => ({ default: m.HorizontalTicker })));
+const ManifestoV2 = dynamic(() => import("@/components/v2/ManifestoV2").then(m => ({ default: m.ManifestoV2 })));
+const GalleryGridV2 = dynamic(() => import("@/components/v2/GalleryGridV2").then(m => ({ default: m.GalleryGridV2 })));
+const MomentsSection = dynamic(() => import("@/components/v2/MomentsSection").then(m => ({ default: m.MomentsSection })));
+const CtaBlockV2 = dynamic(() => import("@/components/v2/CtaBlockV2").then(m => ({ default: m.CtaBlockV2 })));
+const FooterV2 = dynamic(() => import("@/components/v2/FooterV2").then(m => ({ default: m.FooterV2 })));
 
 const PAGE_TITLE =
   "Tamaruma Sawangan · Rumah Ready Stock Sawangan di Cluster Tropical Modern Depok";

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { Preloader } from "@/components/v2/Preloader";
 import { site } from "@/lib/site";
 
 const body = Inter({
@@ -200,6 +201,7 @@ export default function RootLayout({
         style={{ margin: 0, background: "#12352f" }}
       >
         <ScrollProgress />
+        <Preloader />
         {children}
       </body>
     </html>

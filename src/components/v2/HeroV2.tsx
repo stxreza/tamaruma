@@ -68,6 +68,10 @@ export function HeroV2() {
               Rumah Ready Stock Sawangan
             </div>
             <h1 className="flex flex-col">
+              {/* SEO-only text — visually hidden, readable by crawlers */}
+              <span className="sr-only">
+                Tamaruma Sawangan — Rumah Ready Stock Sawangan.
+              </span>
               <div
                 className="font-display font-medium tracking-[-0.025em] leading-none"
                 style={{ fontSize: "clamp(3.5rem, 18vw, 6rem)" }}
@@ -124,6 +128,11 @@ export function HeroV2() {
 
             {/* Heading — tiga baris dengan ukuran menurun */}
             <h1 className="flex flex-col">
+              {/* SEO-only text — visually hidden, readable by crawlers */}
+              <span className="sr-only">
+                Tamaruma Sawangan — Rumah Ready Stock Sawangan, Living Slower.
+              </span>
+
               {/* Baris 1: "Tamaruma" — paling besar */}
               <div
                 className="font-display font-medium tracking-[-0.03em] leading-none"
