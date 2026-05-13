@@ -24,10 +24,19 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: `${site.url}/kontak`,
+    images: [
+      {
+        url: site.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Kontak Tamaruma Sawangan — rumah ready stock Sawangan",
+      },
+    ],
   },
   twitter: {
     title: TITLE,
     description: DESCRIPTION,
+    images: [site.ogImage],
   },
 };
 

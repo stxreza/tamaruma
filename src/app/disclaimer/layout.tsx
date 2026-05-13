@@ -22,10 +22,19 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: `${site.url}/disclaimer`,
+    images: [
+      {
+        url: site.ogImage,
+        width: 1200,
+        height: 630,
+        alt: "Disclaimer Tamaruma Sawangan — rumah ready stock Sawangan",
+      },
+    ],
   },
   twitter: {
     title: TITLE,
     description: DESCRIPTION,
+    images: [site.ogImage],
   },
   robots: {
     index: true,

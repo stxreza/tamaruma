@@ -46,7 +46,7 @@ export const site = {
     "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628858/Rumah_Tipe_58_1_rkjvvk.webp",
   ],
   ogImage:
-    "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778529877/Rumah_Ready_Stok_Tamaruma_Sawangan.webp",
+    "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778696624/Rumah_Tamaaruma_Sawangan.webp",
 };
 
 export const waHref = (() => {
