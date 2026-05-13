@@ -9,6 +9,18 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/"],
       },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+      },
+      {
+        userAgent: "Yandex",
+        allow: "/",
+      },
     ],
     sitemap: `${site.url}/sitemap.xml`,
   };

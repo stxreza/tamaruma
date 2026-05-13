@@ -11,7 +11,7 @@ export const site = {
     "Rumah Ready Stock Sawangan — perumahan tropical modern siap huni di komplek Tamaruma Sawangan, Depok",
   location: "Sawangan, Depok",
   developer: "Ruma ID",
-  url: "https://tamaruma-sawangan.id",
+  url: "https://tamarumasawangan.my.id",
   whatsapp: {
     number: "628131742034",
     message:
@@ -32,7 +32,7 @@ export const site = {
   },
   phone: "0813-1742-034",
   phoneE164: "+62813174203400",
-  email: "hello@tamaruma-sawangan.id",
+  email: "hello@tamarumasawangan.my.id",
   social: {
     instagram: "https://www.instagram.com/tamaruma.sawangan",
     whatsapp: "https://wa.me/628131742034",
