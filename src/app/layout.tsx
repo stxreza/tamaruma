@@ -120,8 +120,7 @@ export const metadata: Metadata = {
     address: true,
   },
   verification: {
-    // Isi saat sudah setup Google Search Console / Bing Webmaster
-    // google: "...",
+    google: "uKfDVEBdBRsVTTEcdPk1KCwztx1Pet8FHZGv4E8kYA0",
     // other: { "msvalidate.01": "..." },
   },
 };
