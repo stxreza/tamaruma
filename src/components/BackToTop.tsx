@@ -16,7 +16,7 @@ export function BackToTop() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Kembali ke atas"
-      className={`fixed bottom-[7.5rem] left-5 z-40 h-10 w-10 rounded-full bg-surface border border-[var(--border-strong)] shadow-[var(--shadow-md)] text-foreground flex items-center justify-center transition-all duration-300 hover:bg-background hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+      className={`fixed bottom-[6.25rem] left-5 z-40 h-10 w-10 rounded-full bg-surface border border-[var(--border-strong)] shadow-[var(--shadow-md)] text-foreground flex items-center justify-center transition-all duration-300 hover:bg-background hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3 pointer-events-none"
       }`}
     >

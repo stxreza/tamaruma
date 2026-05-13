@@ -63,7 +63,7 @@ export function HeroV2() {
 
         {/* ── MOBILE LAYOUT ── heading tengah, CTA pin bawah */}
         <div className="md:hidden flex flex-col flex-1">
-          <div className="flex-1 flex flex-col justify-center max-w-[1300px] mx-auto w-full" style={{ transform: "translateY(-15px)" }}>
+          <div className="flex-1 flex flex-col justify-center max-w-[1300px] mx-auto w-full">
             <div className="eyebrow !text-white/55 mb-3">
               Rumah Ready Stock Sawangan
             </div>
@@ -98,7 +98,7 @@ export function HeroV2() {
           </div>
 
           {/* CTA — pin ke bawah */}
-          <div className="max-w-[1300px] mx-auto w-full pb-[10px] flex justify-center" style={{ transform: "translateY(-10px)" }}>
+          <div className="max-w-[1300px] mx-auto w-full pb-[10px] flex justify-center" style={{ transform: "translateY(-25px)" }}>
             <MagneticButton
               href={waHref}
               target="_blank"
@@ -116,7 +116,7 @@ export function HeroV2() {
           {/* Spacer — 40% dari sisa ruang, heading di posisi tengah-bawah */}
           <div className="flex-[2]" />
 
-          <div className="max-w-[1300px] mx-auto w-full" style={{ transform: "translateY(-15px)" }}>
+          <div className="max-w-[1300px] mx-auto w-full">
             {/* Eyebrow */}
             <div className="eyebrow !text-white/55 mb-5">
               Rumah Ready Stock Sawangan
@@ -171,7 +171,7 @@ export function HeroV2() {
             </h1>
 
             {/* CTA */}
-            <div className="mt-10 flex items-center gap-4" style={{ transform: "translateY(-10px)" }}>
+            <div className="mt-10 flex items-center gap-4">
               <MagneticButton
                 href={waHref}
                 target="_blank"
