@@ -171,7 +171,7 @@ export function HeroV2() {
             </h1>
 
             {/* CTA */}
-            <div className="mt-10 flex items-center gap-4">
+            <div className="mt-10 flex items-center gap-4" style={{ transform: "translateY(10px)" }}>
               <MagneticButton
                 href={waHref}
                 target="_blank"
