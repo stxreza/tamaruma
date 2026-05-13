@@ -8,12 +8,13 @@ import { LocalTime } from "./LocalTime";
 
 const links = [
   { href: "/#intro-v2", label: "Intro", num: "01" },
-  { href: "/#tipe-v2", label: "Tipe Hunian", num: "02" },
-  { href: "/#manifesto", label: "Manifesto", num: "03" },
-  { href: "/#galeri-v2", label: "Galeri", num: "04" },
-  { href: "/#momen", label: "Momen harian", num: "05" },
-  { href: "/harga", label: "Harga", num: "06" },
-  { href: "/kontak", label: "Kontak", num: "07" },
+  { href: "/#siteplan-v2", label: "Siteplan", num: "02" },
+  { href: "/#tipe-v2", label: "Tipe Hunian", num: "03" },
+  { href: "/#manifesto", label: "Manifesto", num: "04" },
+  { href: "/#galeri-v2", label: "Galeri", num: "05" },
+  { href: "/#momen", label: "Momen harian", num: "06" },
+  { href: "/harga", label: "Harga", num: "07" },
+  { href: "/kontak", label: "Kontak", num: "08" },
 ];
 
 export function NavV2() {

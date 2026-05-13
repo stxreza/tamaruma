@@ -53,7 +53,7 @@ export function GalleryGridV2() {
     <section id="galeri-v2" className="bg-background py-24 md:py-36">
       <div className="px-[10px] md:px-10 max-w-[1400px] mx-auto">
         <div className="flex items-baseline justify-between mb-10">
-          <div className="eyebrow">04 · Galeri</div>
+          <div className="eyebrow">05 · Galeri</div>
           <div className="eyebrow hidden md:block">
             Tamaruma Sawangan in frames
           </div>

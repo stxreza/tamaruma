@@ -45,7 +45,7 @@ export function CtaBlockV2() {
 
       <div className="relative z-10 w-full py-28 md:py-36 px-[10px] md:px-10 max-w-[1400px] mx-auto">
         <div className="flex items-baseline justify-between mb-14 md:mb-20 text-white/70">
-          <div className="eyebrow !text-white/70">06 · Kontak</div>
+          <div className="eyebrow !text-white/70">08 · Kontak</div>
           <div className="eyebrow !text-white/70 hidden md:block">
             Visit by appointment
           </div>

@@ -78,7 +78,7 @@ export function UnitShowcaseV2() {
     <section id="tipe-v2" className="bg-background py-24 md:py-36">
       <div className="px-[10px] md:px-10 max-w-[1400px] mx-auto">
         <div className="flex items-baseline justify-between mb-10">
-          <div className="eyebrow">02 · Tipe Hunian</div>
+          <div className="eyebrow">03 · Tipe Hunian</div>
           <div className="eyebrow hidden md:block v-tabular">
             0{active + 1} / 0{unitTypes.length}
           </div>

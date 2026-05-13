@@ -34,7 +34,7 @@ export function ManifestoV2() {
 
       <div className="relative py-24 md:py-36 px-[10px] md:px-10 max-w-[1400px] mx-auto">
         <div className="flex items-baseline justify-between mb-12 md:mb-16 text-on-dark-muted">
-          <div className="eyebrow eyebrow-on-dark">03 · Manifesto</div>
+          <div className="eyebrow eyebrow-on-dark">04 · Manifesto</div>
           <div className="eyebrow eyebrow-on-dark hidden md:block">
             A new kind of home
           </div>

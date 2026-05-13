@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NavV2 } from "@/components/v2/NavV2";
 import { HeroV2 } from "@/components/v2/HeroV2";
 import { IntroV2 } from "@/components/v2/IntroV2";
+import { SiteplanV2 } from "@/components/v2/SiteplanV2";
 import { UnitShowcaseV2 } from "@/components/v2/UnitShowcaseV2";
 import { HorizontalTicker } from "@/components/v2/HorizontalTicker";
 import { ManifestoV2 } from "@/components/v2/ManifestoV2";
@@ -246,6 +247,7 @@ export default function Home() {
       <main>
         <HeroV2 />
         <IntroV2 />
+        <SiteplanV2 />
         <UnitShowcaseV2 />
         <HorizontalTicker />
         <ManifestoV2 />

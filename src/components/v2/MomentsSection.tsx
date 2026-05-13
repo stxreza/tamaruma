@@ -138,7 +138,7 @@ export function MomentsSection() {
         <div className="relative md:absolute md:top-0 md:inset-x-0 z-10 px-[10px] md:px-10 pt-24 md:pt-32">
           <div className="max-w-[1400px] mx-auto">
             <div className="flex items-baseline justify-between text-on-dark-muted">
-              <div className="eyebrow eyebrow-on-dark">05 · Momen harian</div>
+              <div className="eyebrow eyebrow-on-dark">06 · Momen harian</div>
               <div className="eyebrow eyebrow-on-dark hidden md:block v-tabular">
                 {Math.round(progress * 100).toString().padStart(2, "0")} / 100
               </div>
