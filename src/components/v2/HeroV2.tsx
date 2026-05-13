@@ -70,7 +70,7 @@ export function HeroV2() {
             <h1 className="flex flex-col">
               {/* SEO-only text — visually hidden, readable by crawlers */}
               <span className="sr-only">
-                Tamaruma Sawangan — Rumah Ready Stock Sawangan.
+                Tamaruma Sawangan — Rumah Ready Stock Sawangan di cluster tropical modern Depok.
               </span>
               <div
                 className="font-display font-medium tracking-[-0.025em] leading-none"
@@ -130,7 +130,7 @@ export function HeroV2() {
             <h1 className="flex flex-col">
               {/* SEO-only text — visually hidden, readable by crawlers */}
               <span className="sr-only">
-                Tamaruma Sawangan — Rumah Ready Stock Sawangan, Living Slower.
+                Tamaruma Sawangan — Rumah Ready Stock Sawangan, perumahan tropical modern siap huni di Depok. Living, slower.
               </span>
 
               {/* Baris 1: "Tamaruma" — paling besar */}

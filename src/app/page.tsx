@@ -5,7 +5,7 @@ import { HeroV2 } from "@/components/v2/HeroV2";
 import { SectionRail } from "@/components/v2/SectionRail";
 import { FloatingChat } from "@/components/FloatingChat";
 import { BackToTop } from "@/components/BackToTop";
-import { site, unitTypes, faqs } from "@/lib/site";
+import { site, unitTypes, faqs, testimonials } from "@/lib/site";
 
 // Below-fold sections — lazy loaded to speed up initial paint
 const IntroV2 = dynamic(() => import("@/components/v2/IntroV2").then(m => ({ default: m.IntroV2 })));
@@ -101,6 +101,30 @@ export default function Home() {
             closes: "17:00",
           },
         ],
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: site.rating.value,
+          reviewCount: site.rating.count,
+          bestRating: site.rating.best,
+          worstRating: site.rating.worst,
+        },
+        review: testimonials.map((t) => ({
+          "@type": "Review",
+          author: {
+            "@type": "Person",
+            name: t.name,
+          },
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: 5,
+            bestRating: 5,
+            worstRating: 1,
+          },
+          reviewBody: t.quote,
+          publisher: {
+            "@id": `${site.url}/#organization`,
+          },
+        })),
         sameAs: [site.social.instagram, site.social.whatsapp],
       },
 
@@ -154,6 +178,13 @@ export default function Home() {
             unitText: "m²",
           },
         })),
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: site.rating.value,
+          reviewCount: site.rating.count,
+          bestRating: site.rating.best,
+          worstRating: site.rating.worst,
+        },
       },
 
       // 3. Product schema per tipe — untuk rich snippet harga
@@ -190,6 +221,27 @@ export default function Home() {
               "@id": `${site.url}/#realestateagent`,
             },
           },
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: site.rating.value,
+            reviewCount: site.rating.count,
+            bestRating: site.rating.best,
+            worstRating: site.rating.worst,
+          },
+          review: testimonials.slice(0, 2).map((t) => ({
+            "@type": "Review",
+            author: {
+              "@type": "Person",
+              name: t.name,
+            },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: 5,
+              bestRating: 5,
+              worstRating: 1,
+            },
+            reviewBody: t.quote,
+          })),
         };
       }),
 

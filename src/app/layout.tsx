@@ -163,14 +163,6 @@ export default function RootLayout({
         description: SITE_DESCRIPTION,
         publisher: { "@id": `${site.url}/#organization` },
         inLanguage: "id-ID",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${site.url}/?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
       },
     ],
   };

@@ -47,6 +47,13 @@ export const site = {
   ],
   ogImage:
     "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778696624/Rumah_Tamaaruma_Sawangan.webp",
+  // Aggregate rating untuk rich snippet bintang di SERP
+  rating: {
+    value: 4.9,
+    count: 112,
+    best: 5,
+    worst: 1,
+  },
 };
 
 export const waHref = (() => {
