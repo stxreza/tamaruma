@@ -181,7 +181,6 @@ export default function RootLayout({
       className={`${body.variable} ${display.variable} antialiased`}
     >
       <head>
-        <link rel="canonical" href={site.url} />
         <meta name="geo.region" content="ID-JB" />
         <meta name="geo.placename" content="Sawangan, Depok, Jawa Barat" />
         <meta
