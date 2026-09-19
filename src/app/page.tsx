@@ -19,9 +19,9 @@ const CtaBlockV2 = dynamic(() => import("@/components/v2/CtaBlockV2").then(m => 
 const FooterV2 = dynamic(() => import("@/components/v2/FooterV2").then(m => ({ default: m.FooterV2 })));
 
 const PAGE_TITLE =
-  "Tamaruma Sawangan · Rumah Ready Stock Sawangan di Cluster Tropical Modern Depok";
+  "Tamaruma Sawangan · Rumah Ready Stock Sawangan Depok";
 const PAGE_DESCRIPTION =
-  "Tamaruma Sawangan — 177 rumah ready stock Sawangan siap huni dalam cluster tropical modern Depok. Tipe 58, 85, & Hook. DP flat Rp 50 juta, free BPHTB, simulasi KPR mulai Rp 5,3 juta/bulan.";
+  "Tamaruma Sawangan — 177 rumah ready stock Sawangan siap huni di cluster tropical modern Depok. Tipe 58, 85, & Hook. DP flat Rp 50 juta, free BPHTB, KPR mulai Rp 5,3 jt/bln.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     title: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
+    card: "summary_large_image",
   },
 };
 
@@ -101,30 +102,6 @@ export default function Home() {
             closes: "17:00",
           },
         ],
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: site.rating.value,
-          reviewCount: site.rating.count,
-          bestRating: site.rating.best,
-          worstRating: site.rating.worst,
-        },
-        review: testimonials.map((t) => ({
-          "@type": "Review",
-          author: {
-            "@type": "Person",
-            name: t.name,
-          },
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: 5,
-            bestRating: 5,
-            worstRating: 1,
-          },
-          reviewBody: t.quote,
-          publisher: {
-            "@id": `${site.url}/#organization`,
-          },
-        })),
         sameAs: [site.social.instagram, site.social.whatsapp],
       },
 
@@ -178,13 +155,6 @@ export default function Home() {
             unitText: "m²",
           },
         })),
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: site.rating.value,
-          reviewCount: site.rating.count,
-          bestRating: site.rating.best,
-          worstRating: site.rating.worst,
-        },
       },
 
       // 3. Product schema per tipe — untuk rich snippet harga
@@ -216,32 +186,13 @@ export default function Home() {
             highPrice: max,
             offerCount: hasUnits ? u.units.length : 1,
             availability: "https://schema.org/InStock",
+            itemCondition: "https://schema.org/NewCondition",
+            priceValidUntil: "2027-12-31",
             url: `${site.url}/#tipe-v2`,
             seller: {
               "@id": `${site.url}/#realestateagent`,
             },
           },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: site.rating.value,
-            reviewCount: site.rating.count,
-            bestRating: site.rating.best,
-            worstRating: site.rating.worst,
-          },
-          review: testimonials.slice(0, 2).map((t) => ({
-            "@type": "Review",
-            author: {
-              "@type": "Person",
-              name: t.name,
-            },
-            reviewRating: {
-              "@type": "Rating",
-              ratingValue: 5,
-              bestRating: 5,
-              worstRating: 1,
-            },
-            reviewBody: t.quote,
-          })),
         };
       }),
 

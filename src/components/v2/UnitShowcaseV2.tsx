@@ -86,12 +86,12 @@ export function UnitShowcaseV2() {
 
         {/* Caption kecil di atas heading */}
         <p className="font-display italic text-muted text-lg md:text-xl tracking-[-0.01em] mb-4">
-          Tiga dimensi ruang, tanpa waktu tunggu.
+          Koleksi perumahan Sawangan dengan tiga dimensi ruang, tanpa waktu tunggu.
         </p>
 
         <h2 className="display-lg text-foreground max-w-4xl">
           <SplitText
-            text="Pilih Tipe 58, 85, atau Hook—"
+            text="Pilih Tipe 58, 85, atau Hook,"
             mode="word"
             stagger={55}
             duration={900}
@@ -120,7 +120,6 @@ export function UnitShowcaseV2() {
               className="absolute inset-0 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
               style={{ transform: slideIndex === 0 ? "scale(1.06)" : "scale(1)" }}
             >
-              {/* Slider: semua slide ditumpuk, yang aktif opacity-100 */}
               {slides.map((slide, i) => {
                 const isDenah = i > 0;
                 return (
@@ -147,7 +146,7 @@ export function UnitShowcaseV2() {
               })}
             </div>
 
-            {/* Floating badges — Tipe + Ready Stock (hanya saat foto rumah) */}
+            {/* Floating badges */}
             <div
               key={`label-${active}`}
               className="absolute top-4 left-4 md:top-6 md:left-6 flex flex-wrap gap-2 transition-all duration-300"
@@ -157,7 +156,7 @@ export function UnitShowcaseV2() {
                 pointerEvents: slideIndex === 0 ? "auto" : "none",
               }}
             >
-              <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-background/92 backdrop-blur-md border border-[var(--border)] text-foreground">
+              <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-background/95 border border-[var(--border)] text-foreground">
                 {unit.name}
               </span>
               <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-accent text-white">
@@ -165,7 +164,7 @@ export function UnitShowcaseV2() {
               </span>
             </div>
 
-            {/* "Denah" badge — muncul saat bukan foto pertama */}
+            {/* "Denah" badge */}
             <div
               className="absolute top-4 right-4 md:top-6 md:right-6 transition-all duration-300"
               style={{
@@ -174,12 +173,12 @@ export function UnitShowcaseV2() {
                 pointerEvents: slideIndex > 0 ? "auto" : "none",
               }}
             >
-              <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-background/92 backdrop-blur-md border border-[var(--border)] text-foreground">
+              <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-background/95 border border-[var(--border)] text-foreground">
                 Denah
               </span>
             </div>
 
-            {/* Prev / Next click areas — desktop */}
+            {/* Prev / Next click areas */}
             {slides.length > 1 && (
               <>
                 <button

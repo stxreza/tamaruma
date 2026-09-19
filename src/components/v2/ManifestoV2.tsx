@@ -40,7 +40,7 @@ export function ManifestoV2() {
           </div>
         </div>
 
-        {/* Heading — editorial stacked, mixed weights & sizes */}
+        {/* Heading */}
         <h2 className="max-w-5xl">
           <span
             className="block font-display italic font-medium tracking-[-0.03em] text-bronze leading-[1.15]"
@@ -74,7 +74,7 @@ export function ManifestoV2() {
             {
               n: "01",
               h: "Sawangan, akses tanpa kompromi.",
-              p: "MRT, tol, sekolah, dan pusat perbelanjaan semuanya dalam jangkauan — karena lokasi yang tepat adalah bagian dari kenyamanan itu sendiri.",
+              p: "MRT, tol, sekolah, dan pusat perbelanjaan semuanya dalam jangkauan: karena lokasi yang tepat adalah bagian dari kenyamanan itu sendiri.",
             },
             {
               n: "02",

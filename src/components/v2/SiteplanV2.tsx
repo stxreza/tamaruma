@@ -122,11 +122,10 @@ export function SiteplanV2() {
 
         <Reveal delay={200}>
           <p className="mt-8 text-lg md:text-xl text-muted-2 leading-relaxed max-w-3xl">
-            Tamaruma Sawangan berdiri di atas lahan <strong className="font-normal text-foreground">3 hektar</strong> dengan <strong className="font-normal text-foreground">177 unit rumah</strong> yang ditata secara cermat — memastikan setiap blok memiliki akses jalan, sirkulasi udara, dan kedekatan ke fasilitas bersama.
+            Tamaruma Sawangan berdiri di atas lahan <strong className="font-normal text-foreground">3 hektar</strong> dengan <strong className="font-normal text-foreground">177 unit rumah</strong> yang ditata secara cermat, memastikan setiap blok memiliki akses jalan, sirkulasi udara, dan kedekatan ke fasilitas bersama.
           </p>
         </Reveal>
 
-        {/* ── SITEPLAN IMAGE ── */}
         <div
           ref={panelRef}
           className="mt-14 md:mt-20 relative aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-sm bg-surface-2 border border-[var(--border)]"
@@ -138,7 +137,7 @@ export function SiteplanV2() {
           >
             <Image
               src={SITEPLAN_IMAGE}
-              alt="Masterplan Tamaruma Sawangan — tata letak 177 unit rumah ready stock Sawangan di 5 blok dengan fasilitas clubhouse, kolam renang, dan playground"
+              alt="Masterplan Tamaruma Sawangan, tata letak 177 unit rumah ready stock Sawangan di 5 blok dengan fasilitas clubhouse, kolam renang, dan playground"
               fill
               sizes="(min-width: 768px) 90vw, 100vw"
               className={`object-contain md:object-cover transition-opacity duration-700 ${
@@ -156,24 +155,22 @@ export function SiteplanV2() {
 
           {/* Corner label */}
           <div className="absolute top-4 left-4 md:top-6 md:left-6">
-            <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-background/92 backdrop-blur-md border border-[var(--border)] text-foreground">
+            <span className="text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full bg-background/95 border border-[var(--border)] text-foreground">
               Masterplan
             </span>
           </div>
 
-          {/* Corner meta — bottom right */}
-          <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase text-foreground/60 bg-background/80 backdrop-blur-md border border-[var(--border)] rounded-full px-3 py-1.5">
+          <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase text-foreground/60 bg-background/95 border border-[var(--border)] rounded-full px-3 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             Fase 1
           </div>
         </div>
 
-        {/* FIG. caption */}
         <Reveal delay={150}>
           <div className="mt-5 flex items-start gap-3 text-xs text-muted max-w-md">
             <span className="v-tabular shrink-0">FIG. 01</span>
             <span>
-              Masterplan cluster Tamaruma Sawangan — 5 blok (A–E), fasilitas terpusat di jantung kawasan.
+              Masterplan cluster Tamaruma Sawangan: 5 blok (A–E), fasilitas terpusat di jantung kawasan.
             </span>
           </div>
         </Reveal>
@@ -275,7 +272,7 @@ export function SiteplanV2() {
 
             <Reveal delay={500}>
               <p className="mt-8 text-sm text-muted leading-relaxed">
-                Seluruh fasilitas bersama terletak di titik sentral cluster — mudah diakses dari setiap blok dengan jarak tempuh kurang dari 3 menit jalan kaki.
+                Seluruh fasilitas bersama terletak di titik sentral cluster, mudah diakses dari setiap blok dengan jarak tempuh kurang dari 3 menit jalan kaki.
               </p>
             </Reveal>
           </div>

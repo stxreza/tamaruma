@@ -8,13 +8,13 @@ import { SplitText } from "./SplitText";
 const slides = [
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778534747/Lingkungan.webp",
-    alt: "Lingkungan komplek Tamaruma Sawangan — perumahan tropical modern Sawangan Depok",
+    alt: "Lingkungan komplek Tamaruma Sawangan, perumahan tropical modern Sawangan Depok",
     caption: "Lingkungan cluster Tamaruma Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778534747/Deatail_Ruang_Tamu.webp",
     alt: "Detail ruang tamu rumah ready stock Sawangan di Tamaruma Sawangan",
-    caption: "Detail ruang tamu — show unit aktual",
+    caption: "Detail ruang tamu, show unit aktual",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778534747/Kamar_Tidur_Utama.webp",
@@ -28,18 +28,18 @@ const slides = [
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778534747/Taman_Belakang.webp",
-    alt: "Taman belakang perumahan Tamaruma Sawangan — lanskap tropis cluster Sawangan",
+    alt: "Taman belakang perumahan Tamaruma Sawangan, lanskap tropis cluster Sawangan",
     caption: "Taman belakang dengan lanskap tropis",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778621765/Main_Gate_Tamaruma_Sawangan_v2yabu.webp",
-    alt: "Main gate Tamaruma Sawangan — gerbang utama perumahan cluster Sawangan Depok",
+    alt: "Main gate Tamaruma Sawangan, gerbang utama perumahan cluster Sawangan Depok",
     caption: "Main gate Tamaruma Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778621765/Entrance_One_Gate_System_ckjrtp.webp",
-    alt: "Entrance one gate system Tamaruma Sawangan — sistem keamanan satu pintu masuk cluster",
-    caption: "Entrance — one gate system",
+    alt: "Entrance one gate system Tamaruma Sawangan, sistem keamanan satu pintu masuk cluster",
+    caption: "Entrance, one gate system",
   },
 ];
 
@@ -75,7 +75,7 @@ export function IntroV2() {
         <div className="flex items-baseline justify-between mb-12 md:mb-20">
           <div className="eyebrow">01 · Intro</div>
           <div className="eyebrow hidden md:block">
-            Tamaruma Sawangan by Ruma.id — Perumahan Sawangan Depok · Ready Stock
+            Tamaruma Sawangan by Ruma.id, Perumahan Sawangan Depok · Ready Stock
           </div>
         </div>
 
@@ -111,7 +111,7 @@ export function IntroV2() {
 
             <Reveal delay={180}>
               <p className="mt-8 text-lg md:text-xl text-muted-2 leading-relaxed max-w-2xl">
-                Nama <strong className="font-normal text-foreground">Tamaruma Sawangan</strong> berasal dari dua kata: <em>tama</em> (permata) dan <em>ruma</em> (rumah). Filosofinya sederhana — komplek perumahan yang jadi titik balik. Tempat tenang setelah hari yang panjang, tempat anak tumbuh, tempat tamu betah lebih lama dari rencana. Semua unit di cluster ini adalah rumah ready stock Sawangan, sudah berdiri, siap dicek langsung.
+                Nama <strong className="font-normal text-foreground">Tamaruma Sawangan</strong> berasal dari dua kata: <em>tama</em> (permata) dan <em>ruma</em> (rumah). Filosofinya sederhana: komplek perumahan yang jadi titik balik. Tempat tenang setelah hari yang panjang, tempat anak tumbuh, tempat tamu betah lebih lama dari rencana. Semua unit di cluster ini adalah rumah ready stock Sawangan, sudah berdiri, siap dicek langsung.
               </p>
             </Reveal>
 
@@ -135,7 +135,6 @@ export function IntroV2() {
             </div>
           </div>
 
-          {/* IMAGE SLIDER */}
           <div className="md:col-span-5 mt-10 md:mt-0">
             {/* Mobile: no parallax/scale to prevent overflow and cover stats above */}
             <div
@@ -185,7 +184,6 @@ export function IntroV2() {
               </div>
             </div>
 
-            {/* Caption — update sesuai slide aktif */}
             <Reveal delay={280}>
               <div className="mt-5 flex items-start gap-3 text-xs text-muted max-w-sm">
                 <span className="v-tabular shrink-0">

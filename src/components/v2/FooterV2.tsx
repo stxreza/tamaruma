@@ -28,7 +28,7 @@ export function FooterV2() {
 
       <div className="relative px-[10px] md:px-10 max-w-[1400px] mx-auto z-10">
         <div className="grid md:grid-cols-12 gap-10 pb-16">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <div className="font-display text-4xl md:text-5xl text-on-dark leading-tight">
               Tamaruma Sawangan.
             </div>
@@ -40,32 +40,32 @@ export function FooterV2() {
             </div>
           </div>
 
-          <div className="md:col-span-2 md:col-start-7">
-            <div className="eyebrow eyebrow-on-dark">Jelajah</div>
+          <div className="md:col-span-2 md:col-start-6">
+            <div className="eyebrow eyebrow-on-dark">Produk</div>
             <ul className="mt-4 space-y-2 text-sm text-on-dark-muted">
               <li>
-                <a href="/#intro-v2" className="hover:text-on-dark">
-                  Intro
+                <a href="/tipe/58" className="hover:text-on-dark">
+                  Tipe 58
                 </a>
               </li>
               <li>
-                <a href="/#tipe-v2" className="hover:text-on-dark">
-                  Tipe
+                <a href="/tipe/85" className="hover:text-on-dark">
+                  Tipe 85
                 </a>
               </li>
               <li>
-                <a href="/#manifesto" className="hover:text-on-dark">
-                  Manifesto
+                <a href="/tipe/hook" className="hover:text-on-dark">
+                  Tipe Hook
                 </a>
               </li>
               <li>
-                <a href="/#galeri-v2" className="hover:text-on-dark">
-                  Galeri
+                <a href="/fasilitas" className="hover:text-on-dark">
+                  Fasilitas
                 </a>
               </li>
               <li>
-                <a href="/#momen" className="hover:text-on-dark">
-                  Momen harian
+                <a href="/lokasi/sawangan-depok" className="hover:text-on-dark">
+                  Lokasi Sawangan
                 </a>
               </li>
             </ul>
@@ -75,28 +75,28 @@ export function FooterV2() {
             <div className="eyebrow eyebrow-on-dark">Navigasi</div>
             <ul className="mt-4 space-y-2 text-sm text-on-dark-muted">
               <li>
-                <a href="/kontak" className="hover:text-on-dark">
-                  Kontak
+                <a href="/promo" className="hover:text-on-dark">
+                  Promo Kemerdekaan
                 </a>
               </li>
               <li>
                 <a href="/harga" className="hover:text-on-dark">
-                  Harga
+                  Harga & Pricelist
                 </a>
               </li>
               <li>
-                <a href="/#kontak-v2" className="hover:text-on-dark">
-                  Jadwal visit
+                <a href="/panduan-kpr" className="hover:text-on-dark">
+                  Panduan KPR
                 </a>
               </li>
               <li>
-                <a href="/kebijakan-privasi" className="hover:text-on-dark">
-                  Kebijakan Privasi
+                <a href="/tentang" className="hover:text-on-dark">
+                  Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="/disclaimer" className="hover:text-on-dark">
-                  Disclaimer
+                <a href="/kontak" className="hover:text-on-dark">
+                  Kontak & Visit
                 </a>
               </li>
             </ul>

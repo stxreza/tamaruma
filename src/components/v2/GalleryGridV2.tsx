@@ -8,35 +8,35 @@ import { SplitText } from "./SplitText";
 const galleryPhotos = [
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628858/Workdpsce_Area_eicefp.webp",
-    alt: "Workspace area rumah Tamaruma Sawangan — ruang kerja di rumah ready stock Sawangan",
+    alt: "Workspace area rumah Tamaruma Sawangan, ruang kerja di rumah ready stock Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628858/Rumah_Tipe_58_1_rkjvvk.webp",
-    alt: "Fasad rumah Tipe 58 Tamaruma Sawangan — tampak depan unit ready stock Sawangan",
+    alt: "Fasad rumah Tipe 58 Tamaruma Sawangan, tampak depan unit ready stock Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628857/Suasana_Sore_Hari_di_Tamaruma_vda8zx.webp",
-    alt: "Suasana sore hari di komplek Tamaruma Sawangan — perumahan tropical modern Depok",
+    alt: "Suasana sore hari di komplek Tamaruma Sawangan, perumahan tropical modern Depok",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628857/Kamar_Tamaruma_ojpppx.webp",
-    alt: "Kamar tidur rumah Tamaruma Sawangan — interior kamar cluster ready stock Sawangan",
+    alt: "Kamar tidur rumah Tamaruma Sawangan, interior kamar cluster ready stock Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628857/Backyard_Room_waj9rq.webp",
-    alt: "Backyard room Tamaruma Sawangan — area belakang rumah ready stock Sawangan",
+    alt: "Backyard room Tamaruma Sawangan, area belakang rumah ready stock Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628857/Family_Room_ropwlb.webp",
-    alt: "Family room Tamaruma Sawangan — ruang keluarga rumah tropical modern Sawangan",
+    alt: "Family room Tamaruma Sawangan, ruang keluarga rumah tropical modern Sawangan",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778628857/a82a7ec2-3f64-4a3c-bd87-1ca876c0c306_ytzp3i.webp",
-    alt: "Area outdoor Tamaruma Sawangan — lingkungan perumahan cluster Sawangan Depok",
+    alt: "Area outdoor Tamaruma Sawangan, lingkungan perumahan cluster Sawangan Depok",
   },
   {
     src: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778629235/Taman_Belakang_Rumah_xrqrcb.webp",
-    alt: "Taman belakang rumah Tamaruma Sawangan — lanskap tropis perumahan cluster Sawangan",
+    alt: "Taman belakang rumah Tamaruma Sawangan, lanskap tropis perumahan cluster Sawangan",
   },
 ];
 
@@ -81,7 +81,7 @@ export function GalleryGridV2() {
           </div>
           <Reveal delay={180} className="md:col-span-4 md:col-start-9">
             <p className="text-base text-muted-2 leading-relaxed">
-              Berdiri di depan jendelanya. Sentuh dindingnya. Bayangkan pagi pertama Anda di sini — karena semua yang ada di foto ini sudah menunggu, bukan sedang dibuat.
+              Berdiri di depan jendelanya. Sentuh dindingnya. Bayangkan pagi pertama Anda di sini: karena semua yang ada di foto ini sudah menunggu, bukan sedang dibuat.
             </p>
           </Reveal>
         </div>

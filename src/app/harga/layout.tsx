@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { site } from "@/lib/site";
 
 const TITLE =
-  "Harga & Pricelist Tamaruma Sawangan · Rumah Ready Stock Sawangan Mulai Rp 1,075 M";
+  "Harga Tamaruma Sawangan · Pricelist Rumah Sawangan 2026";
 const DESCRIPTION =
-  "Pricelist resmi Tamaruma Sawangan per Februari 2026. Rumah ready stock Sawangan Tipe 58 & 85 di cluster Sawangan Depok, DP flat Rp 50 juta, free BPHTB, cicilan KPR mulai Rp 5,3 juta/bulan.";
+  "Pricelist resmi Tamaruma Sawangan September 2026. Rumah ready stock Sawangan Tipe 58 & 85, DP flat Rp 50 juta, free BPHTB, cicilan KPR mulai Rp 5,3 jt/bln.";
 
 export const metadata: Metadata = {
   title: TITLE,

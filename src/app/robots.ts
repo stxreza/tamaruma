@@ -21,6 +21,35 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Yandex",
         allow: "/",
       },
+      // AI search engine bots — wajib diizinkan agar situs dikutip AI
+      {
+        userAgent: "GPTBot",
+        allow: "/",
+      },
+      {
+        userAgent: "ChatGPT-User",
+        allow: "/",
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: "/",
+      },
+      {
+        userAgent: "ClaudeBot",
+        allow: "/",
+      },
+      {
+        userAgent: "anthropic-ai",
+        allow: "/",
+      },
+      {
+        userAgent: "Applebot-Extended",
+        allow: "/",
+      },
+      {
+        userAgent: "Google-Extended",
+        allow: "/",
+      },
     ],
     sitemap: `${site.url}/sitemap.xml`,
   };

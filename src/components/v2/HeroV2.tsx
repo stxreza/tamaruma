@@ -5,7 +5,6 @@ import { waHref } from "@/lib/site";
 import { WhatsappIcon, CalendarIcon } from "../Icon";
 import { SplitText } from "./SplitText";
 import { MagneticButton } from "./MagneticButton";
-import { LocalTime } from "./LocalTime";
 
 export function HeroV2() {
   return (
@@ -34,7 +33,7 @@ export function HeroV2() {
         className="absolute inset-0 hidden md:block bg-gradient-to-r from-black/55 via-black/10 to-transparent"
       />
 
-      {/* VERTICAL LEFT RAIL — desktop only, very subtle */}
+      {/* Vertical left rail */}
       <div
         aria-hidden
         className="hidden md:flex absolute left-6 bottom-28 z-10 flex-col items-center gap-4 text-[10px] tracking-[0.4em] uppercase text-white/35"
@@ -43,7 +42,6 @@ export function HeroV2() {
         <span className="block h-14 w-px bg-white/20" />
       </div>
 
-      {/* FULL-HEIGHT FOREGROUND */}
       <div className="relative z-10 h-full w-full flex flex-col pt-24 md:pt-28 pb-[54px] md:pb-20 px-[10px] md:px-10">
 
         {/* TOP META BAR */}
@@ -56,21 +54,18 @@ export function HeroV2() {
               </span>
               Perumahan Tropical Modern
             </span>
-            <LocalTime />
           </div>
           <div aria-hidden className="mt-3 h-px w-full bg-white/15 origin-left draw-x" />
         </div>
 
-        {/* ── MOBILE LAYOUT ── heading tengah, CTA pin bawah */}
         <div className="md:hidden flex flex-col flex-1">
           <div className="flex-1 flex flex-col justify-center max-w-[1300px] mx-auto w-full">
             <div className="eyebrow !text-white/55 mb-3">
               Rumah Ready Stock Sawangan
             </div>
             <h1 className="flex flex-col">
-              {/* SEO-only text — visually hidden, readable by crawlers */}
               <span className="sr-only">
-                Tamaruma Sawangan — Rumah Ready Stock Sawangan di cluster tropical modern Depok.
+                Tamaruma Sawangan, Rumah Ready Stock Sawangan di cluster tropical modern Depok.
               </span>
               <div
                 className="font-display font-medium tracking-[-0.025em] leading-none"
@@ -101,7 +96,6 @@ export function HeroV2() {
             </h1>
           </div>
 
-          {/* CTA — pin ke bawah */}
           <div className="max-w-[1300px] mx-auto w-full pb-[10px] flex justify-center" style={{ transform: "translateY(-25px)" }}>
             <MagneticButton
               href={waHref}
@@ -115,25 +109,19 @@ export function HeroV2() {
           </div>
         </div>
 
-        {/* ── DESKTOP LAYOUT ── */}
         <div className="hidden md:flex flex-col flex-1">
-          {/* Spacer — 40% dari sisa ruang, heading di posisi tengah-bawah */}
           <div className="flex-[2]" />
 
           <div className="max-w-[1300px] mx-auto w-full">
-            {/* Eyebrow */}
             <div className="eyebrow !text-white/55 mb-5">
               Rumah Ready Stock Sawangan
             </div>
 
-            {/* Heading — tiga baris dengan ukuran menurun */}
             <h1 className="flex flex-col">
-              {/* SEO-only text — visually hidden, readable by crawlers */}
               <span className="sr-only">
-                Tamaruma Sawangan — Rumah Ready Stock Sawangan, perumahan tropical modern siap huni di Depok. Living, slower.
+                Tamaruma Sawangan, Rumah Ready Stock Sawangan, perumahan tropical modern siap huni di Depok. Living, slower.
               </span>
 
-              {/* Baris 1: "Tamaruma" — paling besar */}
               <div
                 className="font-display font-medium tracking-[-0.03em] leading-none"
                 style={{ fontSize: "clamp(5rem, 9vw, 8.5rem)" }}
@@ -148,7 +136,6 @@ export function HeroV2() {
                 />
               </div>
 
-              {/* Baris 2: "Sawangan." — lebih kecil, sedikit redup */}
               <div
                 className="font-display font-medium tracking-[-0.025em] leading-none mt-[5px]"
                 style={{ fontSize: "clamp(3rem, 5.5vw, 5.5rem)" }}
@@ -163,7 +150,6 @@ export function HeroV2() {
                 />
               </div>
 
-              {/* Baris 3: "Living, slower." — paling kecil, italic, bronze accent */}
               <div
                 className="font-display font-medium italic tracking-[-0.01em] leading-none mt-[5px]"
                 style={{ fontSize: "clamp(1.5rem, 2.8vw, 3rem)" }}

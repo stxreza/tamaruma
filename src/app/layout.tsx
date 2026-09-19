@@ -19,9 +19,9 @@ const display = Cormorant_Garamond({
 });
 
 const SITE_TITLE =
-  "Tamaruma Sawangan · Rumah Ready Stock Sawangan di Cluster Tropical Modern";
+  "Tamaruma Sawangan · Rumah Ready Stock Sawangan Depok";
 const SITE_DESCRIPTION =
-  "Tamaruma Sawangan — cluster perumahan tropical modern di Depok dengan 177 rumah ready stock Sawangan siap huni. DP flat Rp 50 juta, free BPHTB, notaris, dan akad KPR. Visit show unit hari ini.";
+  "Tamaruma Sawangan — 177 rumah ready stock Sawangan siap huni di cluster tropical modern Depok. DP flat Rp 50 juta, free BPHTB, notaris, akad KPR. Visit show unit hari ini.";
 
 export const viewport: Viewport = {
   themeColor: "#12352f",
@@ -96,7 +96,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [site.ogImage],
+    images: {
+      url: site.ogImage,
+      width: 1200,
+      height: 630,
+      alt: "Tamaruma Sawangan — rumah ready stock Sawangan",
+    },
   },
   robots: {
     index: true,
@@ -122,7 +127,8 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "uKfDVEBdBRsVTTEcdPk1KCwztx1Pet8FHZGv4E8kYA0",
-    // other: { "msvalidate.01": "..." },
+    // TODO: daftarkan situs di Bing Webmaster Tools lalu isi kode verifikasi
+    // other: { "msvalidate.01": "BING_VERIFICATION_CODE" },
   },
 };
 

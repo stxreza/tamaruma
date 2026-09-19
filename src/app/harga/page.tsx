@@ -1,12 +1,10 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { NavV2 } from "@/components/v2/NavV2";
 import { FooterV2 } from "@/components/v2/FooterV2";
 import { FloatingChat } from "@/components/FloatingChat";
 import { BackToTop } from "@/components/BackToTop";
-import { useInView } from "@/hooks/useInView";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { WhatsappIcon } from "@/components/Icon";
 import { formatIDR } from "@/lib/format";
 import { waHref } from "@/lib/site";
@@ -80,15 +78,12 @@ const benefits = [
   { icon: "✓", label: "DP Flat Rp 50 juta" },
 ];
 
-// Hitung summary
 const allUnits = blocks.flatMap((b) => b.units);
 const cheapestPrice = Math.min(...allUnits.map((u) => u.price));
 const cheapestKpr25 = Math.min(...allUnits.map((u) => u.kpr25));
 const totalUnits = allUnits.length;
 
 export default function HargaPage() {
-  const { ref, inView } = useInView<HTMLDivElement>();
-
   return (
     <>
       <NavV2 />
@@ -99,22 +94,15 @@ export default function HargaPage() {
         {/* HERO */}
         <section className="pt-32 pb-10 px-0 md:px-10">
           <div className="max-w-[1200px] mx-auto px-[10px] md:px-0">
-            <div
-              ref={ref}
-              className="transition-all duration-1000 ease-out"
-              style={{
-                opacity: inView ? 1 : 0,
-                transform: inView ? "translateY(0)" : "translateY(20px)",
-              }}
-            >
+            <RevealOnScroll>
               <div className="flex items-center gap-2">
                 <div className="eyebrow">Pricelist</div>
                 <span className="text-[10px] tracking-[0.2em] uppercase text-muted">
-                  · Update Februari 2026
+                  · Update September 2026
                 </span>
               </div>
               <h1 className="font-display display-xl mt-4 text-foreground leading-[1.15]">
-                Harga &amp; simulasi KPR.
+                Harga rumah ready stock Sawangan.
               </h1>
               <p className="mt-6 text-lg text-muted max-w-[640px] leading-relaxed">
                 Daftar harga lengkap rumah ready stock Sawangan di komplek
@@ -151,7 +139,7 @@ export default function HargaPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </RevealOnScroll>
           </div>
         </section>
 
@@ -250,7 +238,7 @@ export default function HargaPage() {
                       {block.units.map((u, i) => (
                         <tr
                           key={u.unitId}
-                          className={`group transition-colors hover:bg-surface-2/50 ${
+                          className={`transition-colors hover:bg-surface-2/50 ${
                             i < block.units.length - 1
                               ? "border-b border-[var(--border)]"
                               : ""

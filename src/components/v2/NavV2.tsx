@@ -6,15 +6,32 @@ import { waHref } from "@/lib/site";
 import { WhatsappIcon } from "../Icon";
 import { LocalTime } from "./LocalTime";
 
-const links = [
-  { href: "/#intro-v2", label: "Intro", num: "01" },
-  { href: "/#siteplan-v2", label: "Siteplan", num: "02" },
-  { href: "/#tipe-v2", label: "Tipe Hunian", num: "03" },
-  { href: "/#manifesto", label: "Manifesto", num: "04" },
-  { href: "/#galeri-v2", label: "Galeri", num: "05" },
-  { href: "/#momen", label: "Momen harian", num: "06" },
-  { href: "/harga", label: "Harga", num: "07" },
-  { href: "/kontak", label: "Kontak", num: "08" },
+const mainLinks = [
+  { href: "/", label: "Beranda", num: "01" },
+  { href: "/harga", label: "Harga & Pricelist", num: "02" },
+  { href: "/promo", label: "Promo Kemerdekaan", num: "03" },
+  { href: "/panduan-kpr", label: "Panduan KPR", num: "04" },
+  { href: "/tentang", label: "Tentang Kami", num: "05" },
+  { href: "/kontak", label: "Kontak & Visit", num: "06" },
+];
+
+const subLinks = [
+  {
+    title: "Tipe Unit",
+    links: [
+      { href: "/tipe/58", label: "Tipe 58 (2 Kamar)" },
+      { href: "/tipe/85", label: "Tipe 85 (3 Kamar)" },
+      { href: "/tipe/hook", label: "Tipe Hook (Premium)" },
+    ],
+  },
+  {
+    title: "Kawasan & Fasilitas",
+    links: [
+      { href: "/fasilitas", label: "NAMU Clubhouse" },
+      { href: "/lokasi/sawangan-depok", label: "Lokasi Sawangan Depok" },
+      { href: "/#galeri-v2", label: "Galeri Foto" },
+    ],
+  },
 ];
 
 export function NavV2() {
@@ -142,39 +159,70 @@ export function NavV2() {
           </div>
 
           {/* Menu items */}
-          <nav className="flex-1 px-5 md:px-10 flex flex-col justify-center overflow-y-auto">
-            <ul className="flex flex-col">
-              {links.map((l, i) => (
-                <li
-                  key={l.href}
-                  className="border-t border-white/10 last:border-b"
-                >
-                  <a
-                    href={l.href}
-                    onClick={() => setOpen(false)}
-                    className="group flex items-baseline justify-between py-5 md:py-7 transition-transform duration-500 ease-out"
-                    style={{
-                      opacity: open ? 1 : 0,
-                      transform: open ? "translateY(0)" : "translateY(16px)",
-                      transitionDelay: open ? `${150 + i * 60}ms` : "0ms",
-                      transitionProperty: "opacity, transform",
-                    }}
+          <nav className="flex-1 px-5 md:px-10 py-10 flex flex-col overflow-y-auto">
+            <div className="grid md:grid-cols-[1fr_minmax(auto,300px)] gap-12 md:gap-20 max-w-5xl w-full mx-auto my-auto">
+              <ul className="flex flex-col">
+                {mainLinks.map((l, i) => (
+                  <li
+                    key={l.href}
+                    className="border-t border-white/10 last:border-b"
                   >
-                    <span className="flex items-baseline gap-5 md:gap-8">
-                      <span className="text-xs text-on-dark-muted v-tabular">
-                        {l.num}
+                    <a
+                      href={l.href}
+                      onClick={() => setOpen(false)}
+                      className="group flex items-baseline justify-between py-4 md:py-6 transition-transform duration-500 ease-out"
+                      style={{
+                        opacity: open ? 1 : 0,
+                        transform: open ? "translateY(0)" : "translateY(16px)",
+                        transitionDelay: open ? `${150 + i * 60}ms` : "0ms",
+                        transitionProperty: "opacity, transform",
+                      }}
+                    >
+                      <span className="flex items-baseline gap-4 md:gap-8">
+                        <span className="text-[10px] md:text-xs text-on-dark-muted v-tabular">
+                          {l.num}
+                        </span>
+                        <span className="font-display text-3xl md:text-5xl text-on-dark group-hover:italic group-hover:text-bronze transition-colors duration-300">
+                          {l.label}
+                        </span>
                       </span>
-                      <span className="font-display display-lg text-on-dark group-hover:italic group-hover:text-bronze transition-colors duration-300">
-                        {l.label}
+                      <span className="text-on-dark-muted group-hover:text-on-dark transition-colors hidden sm:block">
+                        →
                       </span>
-                    </span>
-                    <span className="text-on-dark-muted group-hover:text-on-dark transition-colors">
-                      →
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              
+              <div 
+                className="flex flex-col gap-10 transition-transform duration-500 ease-out"
+                style={{
+                  opacity: open ? 1 : 0,
+                  transform: open ? "translateY(0)" : "translateY(16px)",
+                  transitionDelay: open ? `500ms` : "0ms",
+                  transitionProperty: "opacity, transform",
+                }}
+              >
+                {subLinks.map((group) => (
+                  <div key={group.title}>
+                    <div className="eyebrow eyebrow-on-dark mb-5">{group.title}</div>
+                    <ul className="space-y-4">
+                      {group.links.map((l) => (
+                        <li key={l.href}>
+                          <a 
+                            href={l.href} 
+                            onClick={() => setOpen(false)}
+                            className="text-on-dark-muted hover:text-on-dark transition-colors"
+                          >
+                            {l.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
           </nav>
 
           {/* Bottom bar */}

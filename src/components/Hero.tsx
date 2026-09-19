@@ -12,16 +12,6 @@ export function Hero() {
       id="top"
       className="relative pt-28 md:pt-32 pb-12 md:pb-20 overflow-hidden"
     >
-      {/* Static decorative blobs — no parallax */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-32 -right-24 h-[420px] w-[420px] rounded-full bg-accent/10 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute top-1/3 -left-24 h-[320px] w-[320px] rounded-full bg-bronze/10 blur-3xl"
-      />
-
       <div className="container-x grid gap-10 lg:gap-14 lg:grid-cols-[1.05fr_1fr] items-center">
         <div>
           <Reveal direction="up">
@@ -31,7 +21,7 @@ export function Hero() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
               </span>
               <span className="text-xs tracking-wide text-muted-2">
-                Fase 1 — Unit ready di {site.location}
+                Fase 1, Unit ready di {site.location}
               </span>
             </div>
           </Reveal>

@@ -47,13 +47,6 @@ export const site = {
   ],
   ogImage:
     "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778696624/Rumah_Tamaaruma_Sawangan.webp",
-  // Aggregate rating untuk rich snippet bintang di SERP
-  rating: {
-    value: 4.9,
-    count: 112,
-    best: 5,
-    worst: 1,
-  },
 };
 
 export const waHref = (() => {
@@ -204,23 +197,23 @@ export type UnitType = (typeof unitTypes)[number];
 export const whyCards = [
   {
     pain: "Takut inden molor",
-    title: "Unit sudah berdiri, bisa langsung dicek",
-    body: "Semua tipe yang dirilis dalam fase ini sudah topping off. Visit show unit & cek kondisi aktual tanpa imajinasi.",
+    title: "177 Unit sudah berdiri, bisa langsung dicek",
+    body: "Semua tipe yang dirilis dalam fase ini sudah 100% topping off. Visit show unit & cek kondisi material aktual tanpa imajinasi.",
   },
   {
     pain: "Pusing urus furniture",
-    title: "Opsi full furnished, tinggal bawa koper",
-    body: "Paket furnished kurasi lokal: kasur, sofa, dining set, dan kitchen essentials. Tukang-spesifikasi sudah siap.",
+    title: "Opsi full furnished, siap huni 30 hari",
+    body: "Paket furnished kurasi lokal: kasur, sofa, dining set, dan kitchen essentials. Interior bergaransi dan tukang-spesifikasi sudah siap.",
   },
   {
     pain: "Bingung legal & KPR",
-    title: "SHM, free BPHTB & partner 6 bank",
-    body: "Legal bersih sertifikat hak milik, gratis biaya BPHTB, dan in-house KPR team bantu approval 5–7 hari kerja.",
+    title: "SHM, hemat Rp 50+ Juta (Free BPHTB)",
+    body: "Legal bersih bersertifikat Hak Milik, gratis biaya BPHTB, dan in-house KPR team bantu approval 5–7 hari kerja lewat 6 bank nasional.",
   },
   {
     pain: "Bosan cluster tanpa karakter",
-    title: "NAMU Clubhouse & fasilitas keluarga",
-    body: "Kolam renang, playground, jogging loop, dan clubhouse NAMU untuk kopi pagi & co-working akhir pekan.",
+    title: "3 Hektar fasilitas & NAMU Clubhouse",
+    body: "Kolam renang 1.2m, playground, jogging loop 450m, dan clubhouse NAMU untuk kopi pagi & co-working akhir pekan.",
   },
 ];
 
@@ -294,4 +287,37 @@ export const faqs = [
     q: "Berapa biaya IPL dan apa saja yang dicover?",
     a: "IPL saat ini Rp 25.000/m² per bulan, mencakup perawatan fasilitas, keamanan 24 jam, kebersihan koridor, dan pemeliharaan lanskap.",
   },
+  {
+    q: "Berapa harga rumah di Tamaruma Sawangan 2026?",
+    a: "Harga rumah di Tamaruma Sawangan mulai dari Rp 1,075 miliar untuk Tipe 58 (LB 58 m², LT 84–148 m²) hingga Rp 2,8 miliar untuk Tipe Hook (LB 119–146 m², LT 135–258 m²). Tipe 85 yang paling populer berkisar Rp 1,226–1,290 miliar. Semua unit sudah berdiri dan berstatus ready stock siap huni.",
+  },
+  {
+    q: "Dimana lokasi Tamaruma Sawangan?",
+    a: "Tamaruma Sawangan berlokasi di Jalan Terusan Haji Nawi, Pondok Petir, Bojongsari, Kecamatan Sawangan, Kota Depok, Jawa Barat 16518. Koordinat GPS: -6.369515, 106.728079. Akses terdekat dari Gerbang Tol Pamulang (Tol Serpong-Cinere), berjarak sekitar 10 menit berkendara.",
+  },
+  {
+    q: "Apa kelebihan Tamaruma Sawangan dibanding cluster lain di Sawangan?",
+    a: "Tamaruma Sawangan membedakan diri dengan 3 keunggulan utama: (1) semua 177 unit sudah berdiri dan ready stock — bukan inden atau pre-launching, (2) NAMU Clubhouse dengan kolam renang, half-court basketball, playground, dan jogging loop 450 meter dalam kawasan 3 hektar, (3) free BPHTB, free biaya notaris, dan free biaya akad KPR yang bisa menghemat puluhan juta rupiah.",
+  },
+  {
+    q: "Apakah Tamaruma Sawangan dekat tol?",
+    a: "Ya. Tamaruma Sawangan berjarak sekitar 4,5 km dari Gerbang Tol Pamulang di ruas Tol Serpong-Cinere (DESARI). Waktu tempuh sekitar 10 menit tanpa macet. Tol ini menghubungkan langsung ke Tol JORR, Tol BSD, dan Tol Jakarta-Cikampek.",
+  },
+  {
+    q: "Bagaimana cara visit ke Tamaruma Sawangan?",
+    a: "Anda bisa visit langsung tanpa appointment di jam marketing (Senin–Sabtu, 09.00–17.00 WIB). Untuk visit terjadwal, hubungi WhatsApp tim marketing di 0813-1742-034 dan tim akan menyiapkan show unit. Alamat: Jl. Terusan Haji Nawi, Pondok Petir, Bojongsari, Sawangan, Depok.",
+  },
+  {
+    q: "Berapa DP minimum rumah di Tamaruma Sawangan?",
+    a: "DP flat Rp 50 juta untuk semua tipe rumah — Tipe 58, Tipe 85, maupun Tipe Hook. DP ini sudah bersifat all-in dan tidak ada biaya tersembunyi. Sisanya bisa dicicil via KPR dengan tenor 15, 20, atau 25 tahun melalui 6 bank partner (BCA, Mandiri, BSI, BNI, CIMB Niaga, Permata).",
+  },
+  {
+    q: "Tipe rumah apa saja yang tersedia di Tamaruma Sawangan?",
+    a: "Tersedia 3 tipe rumah: (1) Tipe 58 — 2 kamar tidur, 2 kamar mandi, LB 58 m², cocok untuk pasangan muda, mulai Rp 1,075 M. (2) Tipe 85 — 3 kamar tidur, 2 kamar mandi, LB 85 m², tipe paling populer, mulai Rp 1,226 M. (3) Tipe Hook — 4 kamar tidur, 3 kamar mandi, LB 119–146 m², posisi sudut dengan lahan lebih luas, mulai Rp 2,8 M.",
+  },
+  {
+    q: "Apakah Tamaruma Sawangan sudah berpenghuni?",
+    a: "Ya. Tamaruma Sawangan sudah berpenghuni aktif sejak awal 2026. Fasilitas cluster seperti NAMU Clubhouse, kolam renang, playground, dan keamanan 24 jam sudah beroperasi penuh. Unit yang dipasarkan saat ini adalah sisa dari Fase 1 yang sudah topping off dan dalam tahap finishing.",
+  },
 ];
+
