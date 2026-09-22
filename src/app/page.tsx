@@ -5,7 +5,7 @@ import { HeroV2 } from "@/components/v2/HeroV2";
 import { SectionRail } from "@/components/v2/SectionRail";
 import { FloatingChat } from "@/components/FloatingChat";
 import { BackToTop } from "@/components/BackToTop";
-import { site, unitTypes, faqs, testimonials } from "@/lib/site";
+import { site, unitTypes, faqs } from "@/lib/site";
 
 // Below-fold sections — lazy loaded to speed up initial paint
 const IntroV2 = dynamic(() => import("@/components/v2/IntroV2").then(m => ({ default: m.IntroV2 })));
