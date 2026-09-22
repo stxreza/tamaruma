@@ -68,40 +68,13 @@ export default function TipeHookLayout({
     ],
   };
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${site.url}/#tipe-hook-product`,
-    name: "Tipe Hook — Rumah Ready Stock Sawangan",
-    description: DESCRIPTION,
-    image: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778551805/Tamaruma_Tipe_144.webp",
-    brand: {
-      "@type": "Brand",
-      name: "Tamaruma Sawangan",
-    },
-    category: "Perumahan / Cluster / Rumah Tinggal",
-    sku: "TAMARUMA-HOOK",
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "IDR",
-      lowPrice: 2800000000,
-      highPrice: 2800000000,
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
-      priceValidUntil: "2027-12-31",
-      url: `${site.url}/tipe/hook`,
-      seller: {
-        "@id": `${site.url}/#realestateagent`,
-      },
-    },
-  };
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([breadcrumb, productSchema]),
+          __html: JSON.stringify(breadcrumb),
         }}
       />
       {children}

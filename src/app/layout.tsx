@@ -145,6 +145,7 @@ export default function RootLayout({
         name: site.fullName,
         alternateName: [site.name, site.altName, "Tamaruma Sawangan Depok"],
         url: site.url,
+        description: SITE_DESCRIPTION,
         logo: {
           "@type": "ImageObject",
           url: site.ogImage,
@@ -154,6 +155,13 @@ export default function RootLayout({
         image: site.images,
         telephone: site.phoneE164,
         email: site.email,
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: site.phoneE164,
+          contactType: "sales",
+          areaServed: "ID",
+          availableLanguage: "Indonesian",
+        },
         address: {
           "@type": "PostalAddress",
           ...site.addressStructured,

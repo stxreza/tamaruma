@@ -68,39 +68,13 @@ export default function Tipe58Layout({
     ],
   };
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${site.url}/#tipe-58-product`,
-    name: "Tipe 58 — Rumah Ready Stock Sawangan",
-    description: DESCRIPTION,
-    image: "https://res.cloudinary.com/dzhvfbuks/image/upload/v1778551141/Tamaruma_Tipe_58.webp",
-    brand: {
-      "@type": "Brand",
-      name: "Tamaruma Sawangan",
-    },
-    category: "Perumahan / Cluster / Rumah Tinggal",
-    sku: "TAMARUMA-T58",
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "IDR",
-      price: 1075000000,
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
-      priceValidUntil: "2027-12-31",
-      url: `${site.url}/tipe/58`,
-      seller: {
-        "@id": `${site.url}/#realestateagent`,
-      },
-    },
-  };
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([breadcrumb, productSchema]),
+          __html: JSON.stringify(breadcrumb),
         }}
       />
       {children}

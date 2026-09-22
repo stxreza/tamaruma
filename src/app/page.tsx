@@ -157,44 +157,7 @@ export default function Home() {
         })),
       },
 
-      // 3. Product schema per tipe — untuk rich snippet harga
-      ...unitTypes.map((u) => {
-        const hasUnits = "units" in u;
-        const pricesInType = hasUnits
-          ? u.units.map((x) => x.price)
-          : [u.priceFrom];
-        const min = Math.min(...pricesInType);
-        const max = Math.max(...pricesInType);
 
-        return {
-          "@type": "Product",
-          "@id": `${site.url}/#tipe-${u.slug}`,
-          name: `${u.name} — Rumah Ready Stock Sawangan`,
-          alternateName: `${u.name} Tamaruma Sawangan`,
-          description: u.description,
-          image: site.images,
-          brand: {
-            "@type": "Brand",
-            name: site.fullName,
-          },
-          category: "Perumahan / Cluster / Rumah Tinggal",
-          sku: `TAMARUMA-${u.slug.toUpperCase()}`,
-          offers: {
-            "@type": "AggregateOffer",
-            priceCurrency: "IDR",
-            lowPrice: min,
-            highPrice: max,
-            offerCount: hasUnits ? u.units.length : 1,
-            availability: "https://schema.org/InStock",
-            itemCondition: "https://schema.org/NewCondition",
-            priceValidUntil: "2027-12-31",
-            url: `${site.url}/#tipe-v2`,
-            seller: {
-              "@id": `${site.url}/#realestateagent`,
-            },
-          },
-        };
-      }),
 
       // 4. BreadcrumbList — homepage breadcrumb
       {
